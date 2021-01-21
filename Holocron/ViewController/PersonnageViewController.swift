@@ -92,14 +92,17 @@ class PersonnageViewController: UIViewController {
                         if let films = peopleCreated.films {
                             if films.count > 0 {
                                 for film in films {
-                                    print("In films for")
                                     AF.request(film)
                                         .validate(statusCode: [200])
                                         .responseDecodable(of: Film.self) {[weak self] (respFilm) in
                                             switch respFilm.result {
                                                 case .success(let film):
                                                     if let filmName = film.title {
-                                                        let newText = self?.labelFilms.text ?? "" + "\n" + filmName
+                                                        var newText = self?.labelFilms.text ?? ""
+                                                        if(newText != "") {
+                                                            newText += "\n"
+                                                        }
+                                                        newText += filmName
                                                         self?.labelFilms.text = newText
                                                     }
                                                 case .failure(let err):
@@ -114,14 +117,17 @@ class PersonnageViewController: UIViewController {
                         if let vaisseaux = peopleCreated.starships {
                             if vaisseaux.count > 0 {
                                 for vaisseau in vaisseaux {
-                                    print("In vaisseaux for")
                                     AF.request(vaisseau)
                                         .validate(statusCode: [200])
                                         .responseDecodable(of: Starship.self) {[weak self] (respStarship) in
                                             switch respStarship.result {
                                                 case .success(let starship):
                                                     if let starshipName = starship.name {
-                                                        let newText = self?.labelVaisseaux.text ?? "" + "\n" + starshipName
+                                                        var newText = self?.labelVaisseaux.text ?? ""
+                                                        if(newText != "") {
+                                                            newText += "\n"
+                                                        }
+                                                        newText += starshipName
                                                         self?.labelVaisseaux.text = newText
                                                     }
                                                 case .failure(let err):
@@ -136,14 +142,17 @@ class PersonnageViewController: UIViewController {
                         if let vehicules = peopleCreated.vehicles{
                             if vehicules.count > 0 {
                                 for vehicule in vehicules {
-                                    print("In vehicules for")
                                     AF.request(vehicule)
                                         .validate(statusCode: [200])
                                         .responseDecodable(of: Vehicle.self) {[weak self] (respVehicle) in
                                             switch respVehicle.result {
                                                 case .success(let vehicle):
                                                     if let vehicleName = vehicle.name {
-                                                        let newText = self?.labelVehicules.text ?? "" + "\n" + vehicleName
+                                                        var newText = self?.labelVehicules.text ?? ""
+                                                        if(newText != "") {
+                                                            newText += "\n"
+                                                        }
+                                                        newText += vehicleName
                                                         self?.labelVehicules.text = newText
                                                     }
                                                 case .failure(let err):
