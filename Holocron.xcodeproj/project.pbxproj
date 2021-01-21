@@ -3,27 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1407F6CEE5D0BD13BBA3EA29 /* Pods_Holocron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831C5F392FFE050F5E40F5D /* Pods_Holocron.framework */; };
 		CC69632C25B710A200B2A538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69632B25B710A200B2A538 /* AppDelegate.swift */; };
 		CC69632E25B710A200B2A538 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69632D25B710A200B2A538 /* SceneDelegate.swift */; };
-		CC69633025B710A200B2A538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69632F25B710A200B2A538 /* ViewController.swift */; };
+		CC69633025B710A200B2A538 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69632F25B710A200B2A538 /* HomeViewController.swift */; };
 		CC69633325B710A200B2A538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC69633125B710A200B2A538 /* Main.storyboard */; };
 		CC69633525B710A500B2A538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC69633425B710A500B2A538 /* Assets.xcassets */; };
 		CC69633825B710A500B2A538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC69633625B710A500B2A538 /* LaunchScreen.storyboard */; };
+		CC69634725B71AB000B2A538 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69634625B71AB000B2A538 /* People.swift */; };
+		CC69634A25B71C5B00B2A538 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69634925B71C5B00B2A538 /* Film.swift */; };
+		CC69634D25B71E8700B2A538 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69634C25B71E8700B2A538 /* Starship.swift */; };
+		CC69635025B7207500B2A538 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69634F25B7207500B2A538 /* Vehicle.swift */; };
+		CC69635425B7210500B2A538 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69635325B7210500B2A538 /* Species.swift */; };
+		CC69635725B7254000B2A538 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69635625B7254000B2A538 /* Planet.swift */; };
+		CC69635C25B73C1800B2A538 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69635B25B73C1800B2A538 /* ResultViewController.swift */; };
+		CC9758CD25B81C7E004F71A4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758CC25B81C7E004F71A4 /* ApiResponse.swift */; };
+		CC9758D025B82003004F71A4 /* ResultTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758CF25B82003004F71A4 /* ResultTitleTableViewCell.swift */; };
+		CC9758E125B83F6C004F71A4 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9758DF25B83F4D004F71A4 /* Starjedi.ttf */; };
+		CC9758E325B83F70004F71A4 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC9758E025B83F4D004F71A4 /* Starjhol.ttf */; };
+		CC9758E825B84DFA004F71A4 /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758E725B84DFA004F71A4 /* DataResource.swift */; };
+		CC9758EF25B86133004F71A4 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758EE25B86133004F71A4 /* Transport.swift */; };
+		CC9758F225B86269004F71A4 /* ApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758F125B86269004F71A4 /* ApiData.swift */; };
+		CC9758FB25B888B4004F71A4 /* PersonnageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758FA25B888B4004F71A4 /* PersonnageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA75C29A353BB983C7DE174 /* Pods-Holocron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holocron.debug.xcconfig"; path = "Target Support Files/Pods-Holocron/Pods-Holocron.debug.xcconfig"; sourceTree = "<group>"; };
+		692573B6325842BF6F33770B /* Pods-Holocron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holocron.release.xcconfig"; path = "Target Support Files/Pods-Holocron/Pods-Holocron.release.xcconfig"; sourceTree = "<group>"; };
+		9831C5F392FFE050F5E40F5D /* Pods_Holocron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holocron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC69632825B710A200B2A538 /* Holocron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holocron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC69632B25B710A200B2A538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC69632D25B710A200B2A538 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC69632F25B710A200B2A538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC69632F25B710A200B2A538 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC69633225B710A200B2A538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC69633425B710A500B2A538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC69633725B710A500B2A538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC69633925B710A500B2A538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC69634625B71AB000B2A538 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		CC69634925B71C5B00B2A538 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		CC69634C25B71E8700B2A538 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		CC69634F25B7207500B2A538 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		CC69635325B7210500B2A538 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		CC69635625B7254000B2A538 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		CC69635B25B73C1800B2A538 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CC9758CC25B81C7E004F71A4 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		CC9758CF25B82003004F71A4 /* ResultTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTitleTableViewCell.swift; sourceTree = "<group>"; };
+		CC9758DF25B83F4D004F71A4 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		CC9758E025B83F4D004F71A4 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		CC9758E725B84DFA004F71A4 /* DataResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResource.swift; sourceTree = "<group>"; };
+		CC9758EE25B86133004F71A4 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		CC9758F125B86269004F71A4 /* ApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiData.swift; sourceTree = "<group>"; };
+		CC9758FA25B888B4004F71A4 /* PersonnageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +65,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1407F6CEE5D0BD13BBA3EA29 /* Pods_Holocron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CFEDB55C7FB7365069AB260 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9831C5F392FFE050F5E40F5D /* Pods_Holocron.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC69631F25B710A200B2A538 = {
 			isa = PBXGroup;
 			children = (
 				CC69632A25B710A200B2A538 /* Holocron */,
 				CC69632925B710A200B2A538 /* Products */,
+				F439A2DB1DB2392810C48B91 /* Pods */,
+				5CFEDB55C7FB7365069AB260 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +101,63 @@
 		CC69632A25B710A200B2A538 /* Holocron */ = {
 			isa = PBXGroup;
 			children = (
+				CC9758FD25B888BB004F71A4 /* ViewController */,
+				CC9758DE25B83F16004F71A4 /* Fonts */,
+				CC69634425B7150300B2A538 /* Model */,
 				CC69632B25B710A200B2A538 /* AppDelegate.swift */,
 				CC69632D25B710A200B2A538 /* SceneDelegate.swift */,
-				CC69632F25B710A200B2A538 /* ViewController.swift */,
 				CC69633125B710A200B2A538 /* Main.storyboard */,
 				CC69633425B710A500B2A538 /* Assets.xcassets */,
 				CC69633625B710A500B2A538 /* LaunchScreen.storyboard */,
 				CC69633925B710A500B2A538 /* Info.plist */,
+				CC9758CF25B82003004F71A4 /* ResultTitleTableViewCell.swift */,
 			);
 			path = Holocron;
+			sourceTree = "<group>";
+		};
+		CC69634425B7150300B2A538 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC69634625B71AB000B2A538 /* People.swift */,
+				CC69634925B71C5B00B2A538 /* Film.swift */,
+				CC69634C25B71E8700B2A538 /* Starship.swift */,
+				CC69634F25B7207500B2A538 /* Vehicle.swift */,
+				CC69635325B7210500B2A538 /* Species.swift */,
+				CC69635625B7254000B2A538 /* Planet.swift */,
+				CC9758CC25B81C7E004F71A4 /* ApiResponse.swift */,
+				CC9758E725B84DFA004F71A4 /* DataResource.swift */,
+				CC9758EE25B86133004F71A4 /* Transport.swift */,
+				CC9758F125B86269004F71A4 /* ApiData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC9758DE25B83F16004F71A4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC9758DF25B83F4D004F71A4 /* Starjedi.ttf */,
+				CC9758E025B83F4D004F71A4 /* Starjhol.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CC9758FD25B888BB004F71A4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC9758FA25B888B4004F71A4 /* PersonnageViewController.swift */,
+				CC69635B25B73C1800B2A538 /* ResultViewController.swift */,
+				CC69632F25B710A200B2A538 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F439A2DB1DB2392810C48B91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FA75C29A353BB983C7DE174 /* Pods-Holocron.debug.xcconfig */,
+				692573B6325842BF6F33770B /* Pods-Holocron.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC69633C25B710A500B2A538 /* Build configuration list for PBXNativeTarget "Holocron" */;
 			buildPhases = (
+				BC2C161E459A808E24A21AEC /* [CP] Check Pods Manifest.lock */,
 				CC69632425B710A200B2A538 /* Sources */,
 				CC69632525B710A200B2A538 /* Frameworks */,
 				CC69632625B710A200B2A538 /* Resources */,
+				23E33F1BDA9F6F292154465C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +221,77 @@
 			files = (
 				CC69633825B710A500B2A538 /* LaunchScreen.storyboard in Resources */,
 				CC69633525B710A500B2A538 /* Assets.xcassets in Resources */,
+				CC9758E125B83F6C004F71A4 /* Starjedi.ttf in Resources */,
+				CC9758E325B83F70004F71A4 /* Starjhol.ttf in Resources */,
 				CC69633325B710A200B2A538 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23E33F1BDA9F6F292154465C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holocron/Pods-Holocron-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holocron/Pods-Holocron-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Holocron/Pods-Holocron-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2C161E459A808E24A21AEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Holocron-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC69632425B710A200B2A538 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC69633025B710A200B2A538 /* ViewController.swift in Sources */,
+				CC69634A25B71C5B00B2A538 /* Film.swift in Sources */,
+				CC69633025B710A200B2A538 /* HomeViewController.swift in Sources */,
 				CC69632C25B710A200B2A538 /* AppDelegate.swift in Sources */,
+				CC69635725B7254000B2A538 /* Planet.swift in Sources */,
+				CC69634D25B71E8700B2A538 /* Starship.swift in Sources */,
+				CC9758D025B82003004F71A4 /* ResultTitleTableViewCell.swift in Sources */,
+				CC9758EF25B86133004F71A4 /* Transport.swift in Sources */,
+				CC69635C25B73C1800B2A538 /* ResultViewController.swift in Sources */,
+				CC69635425B7210500B2A538 /* Species.swift in Sources */,
 				CC69632E25B710A200B2A538 /* SceneDelegate.swift in Sources */,
+				CC9758FB25B888B4004F71A4 /* PersonnageViewController.swift in Sources */,
+				CC9758CD25B81C7E004F71A4 /* ApiResponse.swift in Sources */,
+				CC9758F225B86269004F71A4 /* ApiData.swift in Sources */,
+				CC9758E825B84DFA004F71A4 /* DataResource.swift in Sources */,
+				CC69635025B7207500B2A538 /* Vehicle.swift in Sources */,
+				CC69634725B71AB000B2A538 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +435,7 @@
 		};
 		CC69633D25B710A500B2A538 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA75C29A353BB983C7DE174 /* Pods-Holocron.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +448,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.godartcn.Holocron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CC69633E25B710A500B2A538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692573B6325842BF6F33770B /* Pods-Holocron.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.godartcn.Holocron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
