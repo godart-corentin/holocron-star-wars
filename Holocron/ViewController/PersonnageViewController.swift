@@ -40,6 +40,9 @@ class PersonnageViewController: UIViewController {
         AF
             .request(url)
             .validate(statusCode: [200])
+            .responseString(completionHandler: { (respString) in
+                print(respString)
+            })
             .responseDecodable(of: People.self) {[weak self] (resp) in
                 switch resp.result {
                     case .success(let peopleCreated):

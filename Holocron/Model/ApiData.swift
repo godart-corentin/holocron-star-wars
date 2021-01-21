@@ -6,10 +6,17 @@
 //
 
 import UIKit
+import SerializedSwift
 
-class ApiData: NSObject, Codable {
+class ApiData: Serializable {
+    @Serialized
     var url: String?
+    @Serialized
     var name: String?
+    @Serialized
     var title: String?
+    @Serialized
     var type: String?
+    
+    required init() {}
 }

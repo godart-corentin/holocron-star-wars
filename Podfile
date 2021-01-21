@@ -8,4 +8,5 @@ target 'Holocron' do
   # Pods for Holocron
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 6.0'
+  pod 'SerializedSwift'
 end
