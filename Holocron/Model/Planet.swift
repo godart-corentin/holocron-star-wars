@@ -6,29 +6,27 @@
 //
 
 import UIKit
+import SerializedSwift
 
 class Planet: ApiData {
+    @Serialized
     var diameter: String?
+    @Serialized("rotation_period")
     var rotationPeriod: String?
+    @Serialized("orbital_period")
     var orbitalPeriod: String?
+    @Serialized
     var gravity: String?
+    @Serialized
     var population: String?
+    @Serialized
     var climate: String?
+    @Serialized
     var terrain: String?
+    @Serialized("surface_water")
     var surfaceWater: String?
+    @Serialized
     var residents: [String]?
+    @Serialized
     var films: [String]?
-    
-    enum CodingKeys: String, CodingKey {
-        case diameter = "diameter"
-        case rotationPeriod = "rotation_period"
-        case orbitalPeriod = "orbital_period"
-        case gravity = "gravity"
-        case population = "population"
-        case climate = "climate"
-        case terrain = "terrain"
-        case surfaceWater = "surface_water"
-        case residents = "residents"
-        case films = "films"
-    }
 }

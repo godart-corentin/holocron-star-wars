@@ -6,11 +6,9 @@
 //
 
 import UIKit
+import SerializedSwift
 
 class Starship: Transport {
+    @Serialized("starship_class")
     var starshipClass: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case starshipClass = "starship_class"
-    }
 }

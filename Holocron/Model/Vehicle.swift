@@ -6,12 +6,10 @@
 //
 
 import UIKit
+import SerializedSwift
 
 class Vehicle: Transport {
+    @Serialized("vehicle_class")
     var vehicleClass: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case vehicleClass = "vehicle_class"
-    }
 }
 

@@ -6,21 +6,19 @@
 //
 
 import UIKit
+import SerializedSwift
 
 class Transport: ApiData {
+    @Serialized
     var model: String?
+    @Serialized
     var manufacturer: String?
+    @Serialized("cost_in_credits")
     var cost: String?
+    @Serialized
     var length: String?
+    @Serialized
     var films: [String]?
+    @Serialized
     var pilots: [String]?
-    
-    enum CodingKeys: String, CodingKey {
-        case model = "model"
-        case manufacturer = "manufacturer"
-        case cost = "cost_in_credits"
-        case length = "length"
-        case films = "films"
-        case pilots = "pilots"
-    }
 }

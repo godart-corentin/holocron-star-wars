@@ -29,6 +29,8 @@
 		CC9758EF25B86133004F71A4 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758EE25B86133004F71A4 /* Transport.swift */; };
 		CC9758F225B86269004F71A4 /* ApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758F125B86269004F71A4 /* ApiData.swift */; };
 		CC9758FB25B888B4004F71A4 /* PersonnageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9758FA25B888B4004F71A4 /* PersonnageViewController.swift */; };
+		CC9D284525B986D400E464C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D284425B986D400E464C2 /* HistoryViewController.swift */; };
+		CC9D284A25B9881C00E464C2 /* HistoryTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D284925B9881C00E464C2 /* HistoryTitleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		CC9758EE25B86133004F71A4 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		CC9758F125B86269004F71A4 /* ApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiData.swift; sourceTree = "<group>"; };
 		CC9758FA25B888B4004F71A4 /* PersonnageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnageViewController.swift; sourceTree = "<group>"; };
+		CC9D284425B986D400E464C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		CC9D284925B9881C00E464C2 /* HistoryTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTitleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		CC69632A25B710A200B2A538 /* Holocron */ = {
 			isa = PBXGroup;
 			children = (
+				CC9D284725B987FC00E464C2 /* TableViewCell */,
 				CC9758FD25B888BB004F71A4 /* ViewController */,
 				CC9758DE25B83F16004F71A4 /* Fonts */,
 				CC69634425B7150300B2A538 /* Model */,
@@ -110,7 +115,6 @@
 				CC69633425B710A500B2A538 /* Assets.xcassets */,
 				CC69633625B710A500B2A538 /* LaunchScreen.storyboard */,
 				CC69633925B710A500B2A538 /* Info.plist */,
-				CC9758CF25B82003004F71A4 /* ResultTitleTableViewCell.swift */,
 			);
 			path = Holocron;
 			sourceTree = "<group>";
@@ -147,8 +151,18 @@
 				CC9758FA25B888B4004F71A4 /* PersonnageViewController.swift */,
 				CC69635B25B73C1800B2A538 /* ResultViewController.swift */,
 				CC69632F25B710A200B2A538 /* HomeViewController.swift */,
+				CC9D284425B986D400E464C2 /* HistoryViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CC9D284725B987FC00E464C2 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC9758CF25B82003004F71A4 /* ResultTitleTableViewCell.swift */,
+				CC9D284925B9881C00E464C2 /* HistoryTitleTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		F439A2DB1DB2392810C48B91 /* Pods */ = {
@@ -291,6 +305,8 @@
 				CC9758F225B86269004F71A4 /* ApiData.swift in Sources */,
 				CC9758E825B84DFA004F71A4 /* DataResource.swift in Sources */,
 				CC69635025B7207500B2A538 /* Vehicle.swift in Sources */,
+				CC9D284A25B9881C00E464C2 /* HistoryTitleTableViewCell.swift in Sources */,
+				CC9D284525B986D400E464C2 /* HistoryViewController.swift in Sources */,
 				CC69634725B71AB000B2A538 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

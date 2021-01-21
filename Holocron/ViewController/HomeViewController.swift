@@ -30,12 +30,33 @@ class HomeViewController: UIViewController {
                 
                 vc.setSearchInput(withInput: searchInput)
                 
+                let defaults = UserDefaults.standard
+                if let historique = defaults.array(forKey: "historique") {
+                    var newHistorique = historique
+                    newHistorique.append(searchInput)
+                    defaults.set(newHistorique, forKey: "historique")
+                } else {
+                    let newHistorique: [String] = [searchInput]
+                    defaults.set(newHistorique, forKey: "historique")
+                }
+                
                 if let navController = self.navigationController {
                     navController.pushViewController(vc, animated: true)
                 } else {
                     print("Pas de navigationController")
                 }
             }
+        }
+    }
+    
+    @IBAction func showHistory() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "historyVC") as! HistoryViewController
+        
+        if let navController = self.navigationController {
+            navController.pushViewController(vc, animated: true)
+        } else {
+            print("Pas de navigationController")
         }
     }
 }
